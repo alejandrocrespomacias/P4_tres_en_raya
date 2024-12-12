@@ -37,6 +37,31 @@ public class P4_tres_en_raya {
 	        
 	        
 	   System.out.println("La moneda se ha lanzado: " + turno + " empieza el juego.");  
+	   
+	   
+	   
+	   boolean jugar = true;
+       while (jugar) {
+           
+           for (int i = 0; i < 3; i++) {
+               for (int j = 0; j < 3; j++) {
+                   tablero[i][j] = " ";  
+               }
+           }
+
+          
+           boolean juegoTerminado = false;
+           while (!juegoTerminado) {
+              
+               System.out.println("\nTablero:");
+               for (int i = 0; i < 3; i++) {
+                   for (int j = 0; j < 3; j++) {
+                       System.out.print("[" + tablero[i][j] + "] ");  
+                   }
+                   System.out.println();
+               }
+	        
+           }
 	        
 	        
 	        
@@ -44,9 +69,7 @@ public class P4_tres_en_raya {
 	        
 	        
 	        
-	        
-	        
-		
+           }	
 	}
 
 }
