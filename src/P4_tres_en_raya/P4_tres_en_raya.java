@@ -107,7 +107,30 @@ public class P4_tres_en_raya {
                hayGanador = true;  
            		}
 	        
-	        
+           
+           if (hayGanador) {
+               
+               System.out.println("\nTablero Final:");
+               for (int i = 0; i < 3; i++) {
+                   for (int j = 0; j < 3; j++) {
+                       System.out.print("[" + tablero[i][j] + "] ");  
+                   }
+                   System.out.println();
+               }
+               System.out.println("\n¡" + turno + " ha ganado!");  
+               juegoTerminado = true;  
+           } else {
+              
+               boolean empate = true;
+             
+               for (int i = 0; i < 3; i++) {
+                   for (int j = 0; j < 3; j++) {
+                       if (tablero[i][j].equals(" ")) {
+                           empate = false;  
+                           break;
+                       }
+                   }
+               }
 	        
 	        
            }	
