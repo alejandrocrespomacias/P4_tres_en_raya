@@ -83,6 +83,29 @@ public class P4_tres_en_raya {
                }
 	        
 	        
+               
+          boolean hayGanador = false;
+               
+           for (int i = 0; i < 3; i++) {
+               if (tablero[i][0].equals(tablero[i][1]) && tablero[i][1].equals(tablero[i][2]) && !tablero[i][0].equals(" ")) {
+                   hayGanador = true;  
+                   break;
+               		}
+           		}
+               
+           for (int j = 0; j < 3; j++) {
+               if (tablero[0][j].equals(tablero[1][j]) && tablero[1][j].equals(tablero[2][j]) && !tablero[0][j].equals(" ")) {
+                   hayGanador = true;  
+                   break;
+               		}
+           		}
+             
+           if (tablero[0][0].equals(tablero[1][1]) && tablero[1][1].equals(tablero[2][2]) && !tablero[0][0].equals(" ")) {
+               hayGanador = true;  
+           }
+           if (tablero[0][2].equals(tablero[1][1]) && tablero[1][1].equals(tablero[2][0]) && !tablero[0][2].equals(" ")) {
+               hayGanador = true;  
+           		}
 	        
 	        
 	        
