@@ -10,6 +10,42 @@ public class P4_tres_en_raya {
 		// TODO Auto-generated method stub
 		
 		
+		Scanner sc = new Scanner(System.in);
+		 
+		Random rand = new Random();
+		 
+		 
+		 
+		String[][] tablero = new String[3][3];
+		 
+		 
+		String jugador1, jugador2;
+		
+		
+		String turno;
+		
+		
+		
+		System.out.print("Ingresa el nombre del Jugador 1: ");
+	        jugador1 = sc.nextLine(); 
+	        
+	    System.out.print("Ingresa el nombre del Jugador 2: ");
+	        jugador2 = sc.nextLine(); 
+	        
+	        
+	        turno = rand.nextBoolean() ? jugador1 : jugador2; 
+	        
+	        
+	   System.out.println("La moneda se ha lanzado: " + turno + " empieza el juego.");  
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
 		
 	}
 
