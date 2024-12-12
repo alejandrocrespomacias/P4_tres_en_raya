@@ -132,6 +132,23 @@ public class P4_tres_en_raya {
                    }
                }
 	        
+               if (empate) {
+                  
+                   System.out.println("\nTablero Final:");
+                   for (int i = 0; i < 3; i++) {
+                       for (int j = 0; j < 3; j++) {
+                           System.out.print("[" + tablero[i][j] + "] ");  
+                       }
+                       System.out.println();
+                   }
+                   System.out.println("\n¡Es un empate!");  
+                   juegoTerminado = true; 
+               } else {
+                   
+                   turno = turno.equals(jugador1) ? jugador2 : jugador1;
+               }
+           }
+       }
 	        
            }	
 	}
