@@ -146,11 +146,18 @@ public class P4_tres_en_raya {
                } else {
                    
                    turno = turno.equals(jugador1) ? jugador2 : jugador1;
-               }
+               		}
+           		}
            }
-       }
 	        
-           }	
-	}
+           System.out.print("¿Quieren jugar otra vez? (sí/no): ");
+           sc.nextLine();  
+           String respuesta = sc.nextLine();  
+           
+           if (respuesta.equalsIgnoreCase("no")) {
+               jugar = false;  
+           				}
+           		}	
+		}
 
 }
