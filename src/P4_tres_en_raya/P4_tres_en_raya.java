@@ -61,8 +61,26 @@ public class P4_tres_en_raya {
                    System.out.println();
                }
 	        
-           }
-	        
+           
+               int fila, columna;
+               System.out.println(turno + ", es tu turno (escoge una casilla):");
+               while (true) {
+                 
+                   System.out.print("Ingresa la fila (0-2): ");
+                   fila = sc.nextInt();
+                   System.out.print("Ingresa la columna (0-2): ");
+                   columna = sc.nextInt();
+
+                 
+                   if (tablero[fila][columna].equals(" ")) {
+                      
+                       tablero[fila][columna] = turno.equals(jugador1) ? "X" : "O";
+                       break;  
+                   } else {
+                       
+                       System.out.println("¡Esa casilla ya está ocupada! Intenta de nuevo.");
+                   }
+               }
 	        
 	        
 	        
